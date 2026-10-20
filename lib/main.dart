@@ -22,6 +22,7 @@ class MyDashboard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        actions: [Icon(Icons.search_outlined),Icon(Icons.more_vert_outlined),],
         leading: Icon(Icons.menu_outlined),
         backgroundColor: Colors.blue,
         title: Text('Dashboard Mahasiswa'),

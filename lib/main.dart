@@ -9,6 +9,7 @@ class MyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      darkTheme: ThemeData.dark(),
       title: 'Aplikasi Mahasiswa',
       debugShowCheckedModeBanner: false,
       home: MyDashboard(),

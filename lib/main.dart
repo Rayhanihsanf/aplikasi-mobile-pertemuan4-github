@@ -12,7 +12,7 @@ class MyWidget extends StatelessWidget {
       darkTheme: ThemeData.dark(),
       title: 'Aplikasi Mahasiswa',
       debugShowCheckedModeBanner: false,
-      home: MyDashboard(),
+      home: MyMatkul(),
     );
   }
 }
@@ -67,6 +67,7 @@ class MyProfil extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        actions: [Icon(Icons.more_vert_outlined)],
         leading: Icon(Icons.menu_outlined),
         backgroundColor: Colors.blue,
         title: Text(
@@ -109,6 +110,60 @@ class MyProfil extends StatelessWidget {
         },
         child: Icon(Icons.add),
         tooltip: 'tambah data profil',
+      ),
+    );
+  }
+}
+class MyMatkul extends StatelessWidget {
+  const MyMatkul ({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+         actions: [Icon(Icons.more_vert_outlined)],
+        leading: Icon(Icons.menu_outlined),
+        backgroundColor: Colors.blue,
+        title: Text(
+          'Mata Kuliah',
+        ),
+      ),
+      body: Column(
+        children: [
+          Center(
+            child: Text(
+              'APLIKASI MOBILE',
+              style: TextStyle(
+                color: Colors.green,
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          Text(
+              'IT GOVERNANCE',
+              style: TextStyle(
+                color: Colors.green,
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
+              'REKAYASA PERANGKAT LUNAK',
+              style: TextStyle(
+                color: Colors.green,
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+        ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){
+
+        },
+        child: Icon(Icons.add),
+        tooltip: 'Add Matkul',
       ),
     );
   }

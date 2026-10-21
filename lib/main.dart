@@ -12,7 +12,7 @@ class MyWidget extends StatelessWidget {
       darkTheme: ThemeData.dark(),
       title: 'Aplikasi Mahasiswa',
       debugShowCheckedModeBanner: false,
-      home: MyMatkul(),
+      home: MyDashboard(),
     );
   }
 }
@@ -26,7 +26,12 @@ class MyDashboard extends StatelessWidget {
         actions: [Icon(Icons.search_outlined),Icon(Icons.more_vert_outlined),],
         leading: Icon(Icons.menu_outlined),
         backgroundColor: Colors.blue,
-        title: Text('Dashboard Mahasiswa'),
+        title: Text(
+          'Dashboard Mahasiswa',
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
       ),
       body: Column(
         children: [
@@ -72,6 +77,9 @@ class MyProfil extends StatelessWidget {
         backgroundColor: Colors.blue,
         title: Text(
           'Profil Mahasiswa',
+          style: TextStyle(
+            color: Colors.white,
+          ),
         ),
       ),
       body: Column(
@@ -109,7 +117,7 @@ class MyProfil extends StatelessWidget {
 
         },
         child: Icon(Icons.add),
-        tooltip: 'tambah data profil',
+        tooltip: 'Add data profil',
       ),
     );
   }
@@ -126,6 +134,9 @@ class MyMatkul extends StatelessWidget {
         backgroundColor: Colors.blue,
         title: Text(
           'Mata Kuliah',
+          style: TextStyle(
+            color: Colors.white,
+          ),
         ),
       ),
       body: Column(

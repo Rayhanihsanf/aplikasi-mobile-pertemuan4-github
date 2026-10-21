@@ -67,7 +67,7 @@ class MyProfil extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: [Icon(Icons.more_vert_outlined)],
+        actions: [Icon(Icons.logout_outlined)],
         leading: Icon(Icons.menu_outlined),
         backgroundColor: Colors.blue,
         title: Text(

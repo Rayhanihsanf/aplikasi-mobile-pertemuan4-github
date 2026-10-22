@@ -28,7 +28,7 @@ class MyDashboard extends StatelessWidget {
 
         },
         icon: Icon(Icons.more_vert_outlined),
-        tooltip: 'more',
+        tooltip: 'More',
         ),
         ],
         leading: Icon(Icons.menu_outlined),
@@ -142,7 +142,12 @@ class MyMatkul extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-         actions: [Icon(Icons.more_vert_outlined)],
+         actions: [IconButton(onPressed: (){
+         },
+         icon: Icon(Icons.more_vert_outlined),
+         tooltip: 'More',
+         ),
+         ],
         leading: Icon(Icons.menu_outlined),
         backgroundColor: Colors.blue,
         title: Text(

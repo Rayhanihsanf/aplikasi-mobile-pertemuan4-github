@@ -9,7 +9,8 @@ class MyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      darkTheme: ThemeData.dark(),
+      theme: ThemeData.light(),
+      themeMode: ThemeMode.system,
       title: 'Aplikasi Mahasiswa',
       debugShowCheckedModeBanner: false,
       home: MyDashboard(),
@@ -23,7 +24,13 @@ class MyDashboard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: [Icon(Icons.search_outlined),Icon(Icons.more_vert_outlined),],
+        actions: [IconButton(onPressed: (){
+
+        },
+        icon: Icon(Icons.more_vert_outlined),
+        tooltip: 'more',
+        ),
+        ],
         leading: Icon(Icons.menu_outlined),
         backgroundColor: Colors.blue,
         title: Text(
@@ -72,7 +79,13 @@ class MyProfil extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: [Icon(Icons.logout_outlined)],
+        actions: [IconButton(onPressed: (){
+
+        },
+        icon: Icon(Icons.logout_outlined),
+        tooltip: 'Logout',
+        ),
+        ],
         leading: Icon(Icons.menu_outlined),
         backgroundColor: Colors.blue,
         title: Text(
